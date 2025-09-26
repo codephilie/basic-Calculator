@@ -1,18 +1,23 @@
-# basic-Calculator
+# Basic calculator
 
-a=float(input("inter your 1st number:"))
-b=float(input("inter your 2nd number: "))
-c=str(input("what do you want to do\nmultiply\ndivide\nadd\nsubstract\nsqaure root:"))
+a=float(input("enter your 1st number:"))
+b=float(input("enter your 2nd number: "))
+c=str(input("what do you want to do\nmultiply\ndivide\nadd\nsubstract\npower:"))
+
 
 if c=="multiply":
     print("your result is:",a*b)
 elif c=="divide":
-    print("your result is:",a/b)
+    if b!=0:
+      print("your result is:",a/b)
+    else:
+        print("error:can not divided by zero")
 elif c=="add":
     print("your result is:",a+b)
-elif c=="substract":
+elif c=="subtract":
     print("your result is:",a-b)
-elif c=="sqaure root":
+elif c=="power":
     print("your result is:",a**b)
 else:
-    print("incorrect operation.please try form listed operation")
+    print("incorrect operation. please choose form listed operations")
+
